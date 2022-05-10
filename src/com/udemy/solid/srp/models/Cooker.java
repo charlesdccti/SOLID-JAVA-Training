@@ -2,7 +2,7 @@ package com.udemy.solid.srp.models;
 
 public class Cooker extends Employee {
 
-	private void cook(Dish dishType) {
+	public void cook(Dish dishType) {
 		
 		switch (dishType) {
 		case COOK_LASANHA: {
