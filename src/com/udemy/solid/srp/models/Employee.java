@@ -4,20 +4,21 @@ public class Employee {
 	private String name;
 	private String age;
 	
-	private void cook() {
-		System.out.println(name + " is cooking.");
-	}
 	
-	private void paint() {
-		System.out.println(name + " is painting.");
+	public String getName() {
+		return name;
 	}
-	
-	private void drive() {
-		System.out.println(name + " is driving.");
+
+	public void setName(String name) {
+		this.name = name;
 	}
-	
-	private void prune() {
-		System.out.println(name + " is pruning.");
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
 	}
 
 }
