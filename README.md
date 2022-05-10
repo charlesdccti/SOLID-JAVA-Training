@@ -23,3 +23,11 @@ returnCooker(new Cooker()).cook(Dish.COOK_LASANHA);
 ~~~
 
 - O codigo acima vai funcionar, pois ele usa o principio de substituiçao de liskov.
+
+
+## 4 - ISP: Interface segregation principle
+( Ou simplesmente Princípio da segregação de interfaces ) 
+ 
+- Declara que os clientes não devem ser forçados a depender de métodos que eles não usam.
+
+- Imagine que você tem um motorista que usa um carro automático, ele não pode ser forçado a pisar na embreagem porque um carro automático não tem embreagem. Então essa função deve ficar de fora da interface desse motorista, então você deve criar uma interface específica para o motorista que usa carro manual que precisa pisar na embreagem. Portanto existem motoristas que vão poder dirigir carros manuais, existem motoristas que vão conseguir dirigir carros automáticos e outros vão conseguir dirigir os dois, se eu fizer uma múltipla implementação de interfaces.
